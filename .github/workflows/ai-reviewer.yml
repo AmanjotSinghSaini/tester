@@ -1,0 +1,12 @@
+name: AI Code Review
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+jobs:
+  ai-review:
+    uses: AmanjotSinghSaini/ai-pr-reviewer/.github/workflows/review.yml@main
+    with:
+      enable_gitleaks: true
+    secrets: inherit

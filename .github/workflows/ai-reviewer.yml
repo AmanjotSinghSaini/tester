@@ -13,4 +13,6 @@ jobs:
     uses: AmanjotSinghSaini/ai-pr-reviewer/.github/workflows/review.yml@main
     with:
       enable_gitleaks: true
+      ai_model: 'gpt-4o-mini'  # Optional: specify AI model  
+      exclude_paths: '*.md,*.txt,*.json,package-lock.json,yarn.lock,dist/*'
     secrets: inherit

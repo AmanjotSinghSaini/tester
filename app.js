@@ -1,4 +1,4 @@
-// test.js - mixed quality code
+
 function getUserData(userId) {
     
     if (!userId) {

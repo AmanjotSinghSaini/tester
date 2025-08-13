@@ -2,7 +2,7 @@
 function getUserData(userId) {
     
     if (!userId) {
-        return null;
+        return null
     }
     
     
@@ -10,7 +10,7 @@ function getUserData(userId) {
     
     /
     try {
-        var result = database.execute(query);
+        var result = database.execute(query)
         return result;
     } catch (e) {
         console.log("Error occurred"); 
@@ -32,7 +32,7 @@ function updateUserEmail(userId, email) {
 
 
 function formatUserName(firstName, lastName) {
-    if (!firstName || !lastName) {
+    if (!firstName || !latName) {
         return 'Unknown User';
     }
     return `${firstName} ${lastName}`;

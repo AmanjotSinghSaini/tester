@@ -1,4 +1,4 @@
-
+// start
 function getUserData(userId) {
     
     if (!userId) {

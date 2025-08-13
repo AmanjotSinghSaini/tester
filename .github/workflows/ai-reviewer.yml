@@ -13,7 +13,7 @@ jobs:
     uses: AmanjotSinghSaini/ai-pr-reviewer/.github/workflows/review.yml@main
     with:
       enable_gitleaks: true  # Set to false to disable secrets scanning
-      ai_model: 'llama3-70b-4096'  # Options: llama3-8b-8192, llama3-70b-4096, mixtral-8x7b-32768
+      ai_model: 'llama3-8b-8192'  # Options: llama3-8b-8192, llama3-70b-4096, mixtral-8x7b-32768
       exclude_paths: '*.md,*.txt,*.json,package-lock.json,yarn.lock,dist/*'  # Optional: files to exclude
     secrets:
       GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
